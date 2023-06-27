@@ -9,32 +9,107 @@
 </head>
 
 <body>
-    <div id ="inner-container">
-        <div class="container">
-                <nav>
-                    <img src="Images/logo.png" class="logo" alt="">
+    <div id="inner-container">
+        <!-- ................ Nvabar-Section.................... -->
+
+        <div class="container-nav">
+            <nav>
+                <img src="Images/logo.png" class="logo" alt="">
                 <ul>
-                 <li class="navitems"><a href="">Home</a></li>
-                 <li class="navitems"><a href="">About</a></li>
-                 <li class="navitems"><a href="">services</a></li>
-                 <li class="navitems"><a href="">Portfolio</a></li>
-                 <li class="navitems"><a href="">contact</a></li>
+                    <li class="navitems"><a href="">Home</a></li>
+                    <li class="navitems"><a href="">About</a></li>
+                    <li class="navitems"><a href="">services</a></li>
+                    <li class="navitems"><a href="">Portfolio</a></li>
+                    <li class="navitems"><a href="">contact</a></li>
                 </ul>
             </nav>
-            <div class="header-text">
-                <p>fornted-developer</p>
-                <h1>Hi, I'm<span> Harsh </span>Dahiya<br>from India</h1>
+            <div class="header-body">
+                <div class="header-container">
+                    <div class="header-row">
+                        <div class="header-text">
+                            <p>fornted-developer</p>
+                            <h1>Hi, I'm<span> Harsh </span>Dahiya<br>from India</h1>
 
+                        </div>
+                        <div class="header-picture">
+                            <img src="Images/Picsart_23-06-05_10-23-27-313.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+
+        <!-- ....................... About ............................... -->
+
+        <div class="main-container">
+            <div id="about">
+                <div class="container">
+                    <div class="row">
+                        <div class="about-column-1">
+                            <img id="about-img" src="/Images/picture.jpg" alt="">
+                        </div>
+                        <div class="about-column-2">
+                            <h1 class="subtitle">About Me </h1>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore hic eius nesciunt quas
+                                accusamus dolorem deserunt laborum. Reiciendis eveniet nesciunt hic commodi, cum
+                                perspiciatis, aut illum temporibus, facilis sequi rem nemo! Molestias tempora animi
+                                accusamus? Reiciendis architecto ullam illum et harum sapiente necessitatibus culpa
+                                laborum aliquid ?</p>
+
+                            <div class="tab-titles">
+                                <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                                <p class="tab-links" onclick="opentab('Experience')">Experience</p>
+                                <p class="tab-links" onclick="opentab('Education')">Education</p>
+                            </div>
+                            <div class="tab-contents active-tab" id="skills">
+                                <ul>
+                                    <li><span>Fronted-design</span><br>Web App Interface</li>
+                                    <li><span>Version control</span><br>Git/Github</li>
+                                    <li><span>App Development</span><br>Building Android apps</li>
+                                </ul>
+                            </div>
+                            <div class="tab-contents" id="Experience">
+                                <ul>
+                                    <li><span>Fronted-design</span><br>Web App Interface</li>
+                                    <li><span>Version control</span><br>Git/Github</li>
+                                    <li><span>App Development</span><br>Building Android apps</li>
+                                </ul>
+                            </div>
+                            <div class="tab-contents" id="Education">
+                                <ul>
+                                    <li><span>Fronted-design</span><br>Web App Interface</li>
+                                    <li><span>Version control</span><br>Git/Github</li>
+                                    <li><span>App Development</span><br>Building Android apps</li>
+                                </ul>
+                            </div>
+                        </div>
+
+
+
+                    </div>
+                </div>
             </div>
         </div>
-        
-      <div class="about">
-        <div class="container">
-
-        </div>
-      </div>
     </div>
+    <!-- <script src="script.js"></script> -->
+    <script>
+        const tablinks = document.getElementsByClassName('tab-links');
+        const tabcontent = document.getElementsByClassName('tab-contents');
 
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link")
+
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+
+
+            }
+        }
+    </script>
 </body>
 
 </html>

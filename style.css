@@ -1,58 +1,64 @@
 @import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Dancing+Script:wght@500&family=Montserrat:wght@200&family=PT+Sans:ital@0;1&family=Poppins:wght@200&family=Space+Mono:ital@1&family=Tajawal:wght@300&family=Tinos&family=Ubuntu:wght@300&display=swap');
-*{
+
+* {
     margin: 0;
     padding: 0;
 }
 
-body{
+body {
     background-color: white;
     box-sizing: border-box;
 }
 
-#inner-container{
+#inner-container {
     /* background-color: #f6f6f6; */
     background-color: #F0FFFF;
     width: 95vw;
     border: 1px #454545;
     margin: auto;
-    height: 90vh;
+    /* height: 90vh; */
     position: relative;
     top: 23px;
     border: 0.4px solid #999999;
     border-radius: 5px;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-     /* background-image: url(/Images/picture.jpg); */
+    /* background-image: url(/Images/picture.jpg); */
     background-size: conver;
     background-position: center;
 }
-.container{
-    font-family: 'Montserrat', sans-serif;
-}
-
 
 /* ..................... Navbar Section ........................... */
 
-nav{
+.container-nav {
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+nav {
     list-style: none;
     display: flex;
     align-items: center;
-    justify-content: space-between;
     flex: wrap;
+    justify-content: space-between;
     padding-right: 40px;
     background-color: white;
-    
+    border-bottom: 1px solid #d0d0d0;
+
 }
-.logo{
+
+.logo {
     width: 120px;
     margin: 2px 30px;
 }
+
 nav ul li {
     display: inline-block;
     list-style: none;
     margin: 10px 20px;
 
 }
- nav ul li a {
+
+nav ul li a {
     font-size: 20px;
     color: black;
     list-style: none;
@@ -61,7 +67,7 @@ nav ul li {
     position: relative;
 }
 
-nav ul li a::after{
+nav ul li a::after {
     content: '';
     width: 0;
     height: 3px;
@@ -71,23 +77,158 @@ nav ul li a::after{
     bottom: -6px;
     transition: 0.3s;
 }
-nav ul li a:hover::after{
+
+nav ul li a:hover::after {
     width: 100%;
 }
 
+/* ................ Header-body section....................*/
 
-.header-text{
-    margin-top: 10%;
-   margin-left: 11%;
+.header-body {
+    margin-left: 11%;
+    padding: 100px 0px 15px 0px;
+    color: black;
 }
-.header-text h1{
+
+.header-row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+}
+
+.header-text {
+    flex-basis: 46%;
+}
+
+.header-picture {
+    flex-basis: 38%;
+}
+
+.header-text h1 {
     margin-top: 15px;
     font-size: 50px;
+
 }
-.header-text h1 span{
+
+.header-text h1 span {
     color: #ff004f;
 }
-.header-text p{
+
+.header-text p {
     font-weight: bold;
-     font-size: 30px;
+    font-size: 30px;
+}
+
+.header-picture img {
+    height: 372px;
+    /* width: 370px; */
+    margin-top: -70px px;
+    border-radius: 15px;
+}
+
+
+.main-container {
+    margin-left: 11%;
+    margin-right: 5%;
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+
+/* ...................About section.............................. */
+
+#about {
+    padding: 60px 0;
+    color: black;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+}
+
+#about-img {
+    height: 200px;
+
+}
+
+.about-column-1 {
+    flex-basis: 35%;
+
+}
+
+.about-column-1 img {
+    border-radius: 15px;
+    width: 100%;
+}
+
+.about-column-2 {
+    flex-basis: 60%;
+
+}
+
+.subtitle {
+    font-size: 50px;
+    font-weight: bolder;
+    color: black;
+
+}
+
+.tab-titles {
+    display: flex;
+    margin: 15px 0 30px;
+
+}
+
+.tab-links {
+    margin-right: 40px;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    color: black;
+    position: relative;
+}
+
+.tab-links::after {
+    content: '';
+    width: 0;
+    height: 3px;
+    background-color: #1fafcc;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.3s;
+
+
+}
+
+.tab-links:hover::after {
+    width: 100%;
+}
+
+.tab-links.active-link::after {
+    width: 50%;
+}
+
+.tab-contents ul li {
+    list-style: none;
+    margin: 10px 0;
+
+}
+
+.tab-contents ul li span {
+    color: rgb(198, 3, 130);
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.tab-contents {
+    display: none;
+}
+
+.tab-contents.active-tab {
+    display: block;
 }
