@@ -27,7 +27,9 @@ body {
     background-position: center;
 }
 
+
 /* ..................... Navbar Section ........................... */
+
 
 .container-nav {
     font-family: 'Montserrat', sans-serif;
@@ -82,7 +84,9 @@ nav ul li a:hover::after {
     width: 100%;
 }
 
+
 /* ................ Header-body section....................*/
+
 
 .header-body {
     margin-left: 11%;
@@ -135,8 +139,8 @@ nav ul li a:hover::after {
 }
 
 
-
 /* ...................About section.............................. */
+
 
 #about {
     padding: 60px 0;
@@ -233,7 +237,10 @@ nav ul li a:hover::after {
     display: block;
 }
 
+
 /* ...................Services Section.............................. */
+
+
 .services-container {
     margin-left: 11%;
     margin-right: 5%;
@@ -287,6 +294,8 @@ nav ul li a:hover::after {
     display: inline-block;
 
 }
+
+
 /* ...................portfolio Section.............................. */
 
 
@@ -329,7 +338,6 @@ nav ul li a:hover::after {
 }
 
 .layer {
-
     background: linear-gradient(rgba(0, 0, 0, 0.5), #ff004f);
     border-radius: 10px;
     position: absolute;
@@ -350,6 +358,7 @@ nav ul li a:hover::after {
     font-weight: 900;
     margin-bottom: 20px;
 }
+
 .layer a{
     margin-top: 20Px;
     color: #ff004f;
@@ -360,12 +369,15 @@ nav ul li a:hover::after {
     height: 50px;
     border-radius: 50%;
 }
+
 .work:hover img{
     transform: scale(1.1);
 }
+
 .work:hover .layer{
     height: 100%;
 }
+
 .btn{
     display: block;
     margin: 50px auto;
@@ -378,36 +390,43 @@ nav ul li a:hover::after {
     font-weight: bold;
     transition: background 0.5s;
 }
+
 .btn:hover{
     background: #ff004f;
 
 }
 
+/* ...................Contact Section.............................. */
 
 .contact-container{
     margin-left: 11%;
     margin-right: 5%;
     font-family: 'Montserrat', sans-serif;
 }
+
 #contact{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     grid-gap: 30px;
     margin-top: 40px;
 }
+
 .first-column p{
     margin-top: 30px;
 
 }
+
 .first-column p i{
     color: #ff004f;
     margin-right: 15px;
     font-size: 25px;
 }
+
 .social-icons{
     margin-top: 35px;
     
 }
+
 .social-icons a{
     text-decoration: none;
     font-size: 30px;
@@ -417,6 +436,7 @@ nav ul li a:hover::after {
     transition: transform 0.5s;
 
 }
+
 .social-icons a:hover{
     color: #ff004f;
     transform: translateY(-5px);
@@ -425,10 +445,12 @@ nav ul li a:hover::after {
     display: inline-block;
     background: #ff004f;
 }
+
 .second-column form{
   width: 100%;
 
 }
+
 form input , form textarea{
     width: 100%;
     border: 0;
@@ -440,12 +462,14 @@ form input , form textarea{
     font-size: 20px;
     border-radius: 6px;
 }
+
 form .btn2{
     padding: 14px 40px;
     font-size: 18px;
     margin-top: 16px;
     cursor: pointer;
 }
+
 .greeting{
     width: 100%;
     text-align: center;
