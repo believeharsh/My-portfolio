@@ -4,7 +4,9 @@
     margin: 0;
     padding: 0;
 }
-
+html{
+    scroll-behavior: smooth;
+}
 body {
     background-color: white;
     box-sizing: border-box;
@@ -478,5 +480,78 @@ form .btn2{
     margin-top: 20px;
     font-weight: 500;
     color: white;
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+
+/* ...................... Media Queryies of small screen ....................... */
+    #times , #menu{
+    display: none;
+    /* font-size: 45px; */
+    color: black;
+
+}
+@media only screen and (max-width: 600px){
+     #times , #menu {
+        display: block;
+        font-size: 25px;
+        color: black;
+       }
+
+       nav ul{
+        background: #ff004f;
+        position: fixed;
+        top: 0;
+        right: -200px;
+        width: 200px;
+        height: 100vh;
+        padding-top: 50px;
+        z-index: 2;
+        transition: right 0.5s;
+       
+    
+       }
+       nav ul li {
+        display: block;
+        margin: 35px;
+        color: white;
+
+       }
+       nav ul #times{
+        position: absolute;
+        top: 25px;
+        left: 25px;
+        cursor: pointer;
+        color: white;
+       }
+       .subtitle{
+        font-size: 40px;
+       }
+       .about-column-1, .about-column-2{
+        flex-basis: 100%;
+       }
+       .about-column-1{
+        margin-bottom: 30px;
+       }
+       .about-column-2{
+        font-size: 15px;
+       }
+       .tab-links{
+        font-size: 30px;
+        margin-right: 18px;
+       }
+       .first-column, .second-column{
+        /* margin: 15px auto; */
+        flex-basis: 100%;
+        /* but it will not work becasue it's a grid container */
+       }
+}
+
+#msg{
+    color: #51fa14;
+    margin-top: -30px;
+    display: block;
+    font-size: 15px;
     font-family: 'Montserrat', sans-serif;
 }

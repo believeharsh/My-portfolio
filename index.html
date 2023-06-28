@@ -15,31 +15,35 @@
         <!-- ................ Nvabar-Section.................... -->
 
         <div class="container-nav">
-            <nav>
-                <img src="Images/logo.png" class="logo" alt="">
-                <ul>
-                    <li class="navitems"><a href="">Home</a></li>
-                    <li class="navitems"><a href="">About</a></li>
-                    <li class="navitems"><a href="">services</a></li>
-                    <li class="navitems"><a href="">Portfolio</a></li>
-                    <li class="navitems"><a href="">contact</a></li>
-                </ul>
-            </nav>
-            <div class="header-body">
-                <div class="header-container">
-                    <div class="header-row">
-                        <div class="header-text">
-                            <p>fornted-developer</p>
-                            <h1>Hi, I'm<span> Harsh </span>Dahiya<br>from India</h1>
+            <div id="navbar">
+                <nav>
+                    <img src="Images/logo.png" class="logo" alt="">
+                    <ul id="side-menu">
+                        <li class="navitems"><a href="#navbar">Home</a></li>
+                        <li class="navitems"><a href="#about">About</a></li>
+                        <li class="navitems"><a href="#services">services</a></li>
+                        <li class="navitems"><a href="#portfolio">Portfolio</a></li>
+                        <li class="navitems"><a href="#contact">contact</a></li>
+                        <i id="times" class="fa-light fa-circle-xmark" onclick="closemenu()"></i>
+                    </ul>
+                    <i id="menu" class="fa-regular fa-bars" onclick="openmenu()"></i>
 
-                        </div>
-                        <div class="header-picture">
-                            <img src="Images/Picsart_23-06-05_10-23-27-313.png" alt="">
+                </nav>
+                <div class="header-body">
+                    <div class="header-container">
+                        <div class="header-row">
+                            <div class="header-text">
+                                <p>fornted-developer</p>
+                                <h1>Hi, I'm<span> Harsh </span>Dahiya<br>from India</h1>
+
+                            </div>
+                            <div class="header-picture">
+                                <img src="Images/Picsart_23-06-05_10-23-27-313.png" alt="">
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-
 
         </div>
 
@@ -189,12 +193,13 @@
                     <a href="/Images/workout.png" download class="btn btn2">Download Resume</a>
                 </div>
                 <div class="second-column">
-                    <form action="">
+                    <form name="submit-to-google-sheet">
                         <input type="text" name="name" placeholder="your name" required>
                         <input type="email" name="email" placeholder="your email" required>
                         <textarea name="Message" rows="6" placeholder="your message"></textarea>
                         <button type="submit" class="btn btn2">Submit</button>
                     </form>
+                    <span id="msg">hello</span>
                 </div>
             </div>
 
@@ -221,6 +226,33 @@
             }
         }
     </script>
+    <script>
+        var sidemenu = document.getElementById("side-menu");
+        function openmenu() {
+            sidemenu.style.right = "0";
+        }
+        function closemenu() {
+            sidemenu.style.right = "-200px";
+        }
+    </script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbwSWWaECApk3NJOruxqPrxBpY0coMh5A9bT3lsUmq9PO4xvSFTc9SblpTaEawxYT8amvg/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById('msg');
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                msg.innerHTML = 'Message sent successfully'
+                setTimeout (function(){
+                    msg.innerHTML = ""
+                },5000)
+                form.reset();
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
 </body>
 
 </html>
