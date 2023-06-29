@@ -213,20 +213,25 @@
     <!-- <script src="script.js"></script> -->
     <script>
         const tablinks = document.getElementsByClassName('tab-links');
-        const tabcontent = document.getElementsByClassName('tab-contents');
+        const tabcontents = document.getElementsByClassName('tab-contents');
 
         function opentab(tabname) {
-            for (tablink of tablinks) {
+            for (let tablink of tablinks) {
                 tablink.classList.remove("active-link")
 
             }
-            for (tabcontent of tabcontents) {
+            for (let tabcontent of tabcontents) {
                 tabcontent.classList.remove("active-tab");
 
 
             }
+            // event.currentTarget.classList.add("active-link");
+            document.getElementsById(tabname).classList.add("active-link");
+            document.getElementsById(tabname).classList.add("active-tab");
+            
         }
     </script>
+
     <script>
         var sidemenu = document.getElementById("side-menu");
         function openmenu() {
@@ -236,24 +241,25 @@
             sidemenu.style.right = "-200px";
         }
     </script>
+
     <script>
         const scriptURL = 'https://script.google.com/macros/s/AKfycbwSWWaECApk3NJOruxqPrxBpY0coMh5A9bT3lsUmq9PO4xvSFTc9SblpTaEawxYT8amvg/exec'
         const form = document.forms['submit-to-google-sheet']
         const msg = document.getElementById('msg');
-      
+
         form.addEventListener('submit', e => {
-          e.preventDefault()
-          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-            .then(response => {
-                msg.innerHTML = 'Message sent successfully'
-                setTimeout (function(){
-                    msg.innerHTML = ""
-                },5000)
-                form.reset();
-            })
-            .catch(error => console.error('Error!', error.message))
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                .then(response => {
+                    msg.innerHTML = 'Message sent successfully'
+                    setTimeout(function () {
+                        msg.innerHTML = ""
+                    }, 5000)
+                    form.reset();
+                })
+                .catch(error => console.error('Error!', error.message))
         })
-      </script>
+    </script>
 </body>
 
 </html>
