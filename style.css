@@ -235,7 +235,7 @@ nav ul li a:hover::after {
     display: none;
 }
 
-.tab-contents.active-tab{
+.tab-contents.active-tab {
     display: block;
 }
 
