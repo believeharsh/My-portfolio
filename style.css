@@ -475,10 +475,10 @@ form .btn2{
 .greeting{
     width: 100%;
     text-align: center;
-    padding: 20px 0;
-    background : #262626;
-    margin-top: 20px;
-    font-weight: 500;
+    padding: 15px 0;
+    background: #262626;
+    margin-top: 10px;
+    font-weight: 900;
     color: white;
     font-family: 'Montserrat', sans-serif;
 }
