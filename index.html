@@ -2,263 +2,265 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio </title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio </title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <div id="inner-container">
+  <div id="inner-container">
 
-        <!-- ................ Nvabar-Section.................... -->
+    <!-- ................ Nvabar-Section.................... -->
 
-        <div class="container-nav">
-            <div id="navbar">
-                <nav>
-                    <img src="Images/logo.png" class="logo" alt="">
-                    <ul id="side-menu">
-                        <li class="navitems"><a href="#navbar">Home</a></li>
-                        <li class="navitems"><a href="#about">About</a></li>
-                        <li class="navitems"><a href="#services">services</a></li>
-                        <li class="navitems"><a href="#portfolio">Portfolio</a></li>
-                        <li class="navitems"><a href="#contact">contact</a></li>
-                        <i id="times" class="fa-light fa-circle-xmark" onclick="closemenu()"></i>
-                    </ul>
-                    <i id="menu" class="fa-regular fa-bars" onclick="openmenu()"></i>
+    <div class="container-nav">
+      <div id="navbar">
+        <nav>
+          <img src="Images/logo.png" class="logo" alt="">
+          <ul id="side-menu">
+            <li class="navitems"><a href="#navbar">Home</a></li>
+            <li class="navitems"><a href="#about">About</a></li>
+            <li class="navitems"><a href="#services">services</a></li>
+            <li class="navitems"><a href="#portfolio">Portfolio</a></li>
+            <li class="navitems"><a href="#contact">contact</a></li>
+            <i id="times" class="fa-light fa-circle-xmark" onclick="closemenu()"></i>
+          </ul>
+          <i id="menu" class="fa-regular fa-bars" onclick="openmenu()"></i>
 
-                </nav>
-                <div class="header-body">
-                    <div class="header-container">
-                        <div class="header-row">
-                            <div class="header-text">
-                                <p>fornted-developer</p>
-                                <h1>Hi, I'm<span> Harsh </span>Dahiya<br>from India</h1>
+        </nav>
+        <div class="header-body">
+          <div class="header-container">
+            <div class="header-row">
+              <div class="header-text">
+                <p>fornted-developer</p>
+                <h1>Hi, I'm<span> Harsh </span>Dahiya<br>from India</h1>
 
-                            </div>
-                            <div class="header-picture">
-                                <img src="Images/Picsart_23-06-05_10-23-27-313.png" alt="">
-                            </div>
-                        </div>
-                    </div>
-                </div>
+              </div>
+              <div class="header-picture">
+                <img src="Images/Picsart_23-06-05_10-23-27-313.png" alt="">
+              </div>
             </div>
-
+          </div>
         </div>
-
-        <!-- ....................... About ............................... -->
-
-        <div class="main-container">
-            <div id="about">
-
-                <div class="row">
-                    <div class="about-column-1">
-                        <img id="about-img" src="/Images/about-picture.jpeg" alt="">
-                    </div>
-                    <div class="about-column-2">
-                        <h1 class="subtitle">About Me </h1>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore hic eius nesciunt quas
-                            accusamus dolorem deserunt laborum. Reiciendis eveniet nesciunt hic commodi, cum
-                            perspiciatis, aut illum temporibus, facilis sequi rem nemo! Molestias tempora animi
-                            accusamus? Reiciendis architecto ullam illum et harum sapiente necessitatibus culpa
-                            laborum aliquid ?</p>
-
-                        <div class="tab-titles">
-                            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
-                            <p class="tab-links" onclick="opentab('Experience')">Experience</p>
-                            <p class="tab-links" onclick="opentab('Education')">Education</p>
-                        </div>
-                        <div class="tab-contents active-tab" id="skills">
-                            <ul>
-                                <li><span>Fronted-design</span><br>Web App Interface</li>
-                                <li><span>Version control</span><br>Git/Github</li>
-                                <li><span>App Development</span><br>Building Android apps</li>
-                            </ul>
-                        </div>
-                        <div class="tab-contents" id="Experience">
-                            <ul>
-                                <li><span>jan21-Mar21</span><br>Fronted enginner</li>
-                                <li><span>Mar21-Dec21</span><br>Js Developer</li>
-                                <li><span>Jav22-feb23</span><br>software enginner</li>
-                            </ul>
-                        </div>
-                        <div class="tab-contents" id="Education">
-                            <ul>
-                                <li><span>2018-2022</span><br>Schooling (92%)</li>
-                                <li><span>2022-2023</span><br>Fronted-enginnering-course</li>
-                                <li><span>2022-2025</span><br>Bechalor in Computer Application </li>
-                            </ul>
-                        </div>
-                    </div>
-
-
-
-                </div>
-
-            </div>
-        </div>
-
-        <!-- ....................services......................... -->
-
-        <div class="services-container">
-            <div id="services">
-                <h1 class="subtitle">My Services</h1>
-                <div class="services-list">
-                    <div>
-                        <i class="fa-solid fa-code"></i>
-                        <h2>Web Design</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, eaque.</p>
-                        <a href="#">Learn more</a>
-                    </div>
-                    <div>
-                        <i class="fa-regular fa-crop"></i>
-                        <h2>Ui UX Design</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, eaque.</p>
-                        <a href="#">Learn more</a>
-                    </div>
-                    <div>
-                        <i class="fa-brands fa-app-store"></i>
-                        <h2>App Design</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, eaque.</p>
-                        <a href="#">Learn more</a>
-                    </div>
-
-                </div>
-
-            </div>
-        </div>
-
-        <!-- ....................Portfolio......................... -->
-
-        <div class="portfolio-contaner">
-            <div id="portfolio">
-                <h1 class="subtitle">My Work</h1>
-                <div class="work-list">
-                    <div class="work">
-                        <img id="first"
-                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTHD-i-0D1n8U-NVEoy5XYeQceIHaPnuD4mHg&usqp=CAU"
-                            alt="">
-                        <div class="layer">
-                            <h1>Social Media App</h1>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium corporis vitae autem
-                                necessitatibus alias! Eum.
-                            </p>
-                            <a href="#"><i class="fa-light fa-link"></i></a>
-                        </div>
-
-                    </div>
-                    <div class="work">
-                        <img src="https://appinventiv.com/wp-content/uploads/sites/1/2019/02/Mobile-Web-vs.-Mobile-App-%E2%80%93-From-The-Startup-Perspective.png"
-                            alr="">
-                        <div class="layer">
-                            <h1>Social Media App</h1>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium corporis vitae autem
-                                necessitatibus alias! Eum.
-                            </p>
-                            <a href="#"><i class="fa-light fa-link"></i></a>
-                        </div>
-                    </div>
-                    <div class="work">
-                        <img src="https://appinventiv.com/wp-content/uploads/sites/1/2019/02/How-Important-is-UI-UX-Design-in-an-App-Development-Process.png"
-                            alt="">
-                        <div class="layer">
-                            <h1>Social Media App</h1>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium corporis vitae autem
-                                necessitatibus alias! Eum.
-                            </p>
-                            <a href="#"><i class="fa-light fa-link"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <a href="#" class="btn">See More</a>
-
-
-            </div>
-        </div>
-
-        <!-- ....................contact......................... -->
-
-        <div class="contact-container">
-            <div id="contact">
-                <div class="first-column">
-                    <h1 class="subtitle">Contact Me</h1>
-                    <p><i class="fa-regular fa-envelope"></i>bontinue@gmail.com</p>
-                    <p><i class="fa-solid fa-phone"></i>8349774340</p>
-                    <div class="social-icons">
-                        <a href=""><i class="fa-brands fa-instagram"></i></a>
-                        <a href=""><i class="fa-brands fa-youtube"></i></a>
-                        <a href=""><i class="fa-brands fa-twitter"></i></a>
-                    </div>
-                    <a href="/Images/workout.png" download class="btn btn2">Download Resume</a>
-                </div>
-                <div class="second-column">
-                    <form name="submit-to-google-sheet">
-                        <input type="text" name="name" placeholder="your name" required>
-                        <input type="email" name="email" placeholder="your email" required>
-                        <textarea name="Message" rows="6" placeholder="your message"></textarea>
-                        <button type="submit" class="btn btn2">Submit</button>
-                    </form>
-                    <span id="msg">hello</span>
-                </div>
-            </div>
-
-
-        </div>
-        <div class="greeting">
-            <p>Thank You so much for checking my Portfolio</p>
-        </div>
+      </div>
 
     </div>
-    <!-- <script src="script.js"></script> -->
-    <script>
-        const tablinks = document.getElementsByClassName('tab-links');
-        const tabcontents = document.getElementsByClassName('tab-contents');
 
-        function opentab(tabname) {
-            for (let tablink of tablinks) {
-                tablink.classList.remove("active-link")
+    <!-- ....................... About ............................... -->
 
-            }
-            for (let tabcontent of tabcontents) {
-                tabcontent.classList.remove("active-tab");
+    <div class="main-container">
+      <div id="about">
+
+        <div class="row">
+          <div class="about-column-1">
+            <img id="about-img" src="/Images/about-picture.jpeg" alt="">
+          </div>
+          <div class="about-column-2">
+            <h1 class="subtitle">About Me </h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore hic eius nesciunt quas
+              accusamus dolorem deserunt laborum. Reiciendis eveniet nesciunt hic commodi, cum
+              perspiciatis, aut illum temporibus, facilis sequi rem nemo! Molestias tempora animi
+              accusamus? Reiciendis architecto ullam illum et harum sapiente necessitatibus culpa
+              laborum aliquid ?</p>
+
+            <div class="tab-titles">
+              <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+              <p class="tab-links" onclick="opentab('Experience')">Experience</p>
+              <p class="tab-links" onclick="opentab('Education')">Education</p>
+            </div>
+            <div class="tab-contents active-tab" id="skills">
+              <ul>
+                <li><span>Fronted-design</span><br>Web App Interface</li>
+                <li><span>Version control</span><br>Git/Github</li>
+                <li><span>App Development</span><br>Building Android apps</li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="Experience">
+              <ul>
+                <li><span>jan21-Mar21</span><br>Fronted enginner</li>
+                <li><span>Mar21-Dec21</span><br>Js Developer</li>
+                <li><span>Jav22-feb23</span><br>software enginner</li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="Education">
+              <ul>
+                <li><span>2018-2022</span><br>Schooling (92%)</li>
+                <li><span>2022-2023</span><br>Fronted-enginnering-course</li>
+                <li><span>2022-2025</span><br>Bechalor in Computer Application </li>
+              </ul>
+            </div>
+          </div>
 
 
-            }
-            event.currentTarget.classList.add("active-link");
-            document.getElementById(tabname).classList.add("active-tab");
-            
-        }
-    </script>
 
-    <script>
-        var sidemenu = document.getElementById("side-menu");
-        function openmenu() {
-            sidemenu.style.right = "0";
-        }
-        function closemenu() {
-            sidemenu.style.right = "-200px";
-        }
-    </script>
+        </div>
 
-    <script>
-        const scriptURL = 'https://script.google.com/macros/s/AKfycbwSWWaECApk3NJOruxqPrxBpY0coMh5A9bT3lsUmq9PO4xvSFTc9SblpTaEawxYT8amvg/exec'
-        const form = document.forms['submit-to-google-sheet']
-        const msg = document.getElementById('msg');
+      </div>
+    </div>
 
-        form.addEventListener('submit', e => {
-            e.preventDefault()
-            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
-                .then(response => {
-                    msg.innerHTML = 'Message sent successfully'
-                    setTimeout(function () {
-                        msg.innerHTML = ""
-                    }, 5000)
-                    form.reset();
-                })
-                .catch(error => console.error('Error!', error.message))
+    <!-- ....................services......................... -->
+
+    <div class="services-container">
+      <div id="services">
+        <h1 class="subtitle">My Services</h1>
+        <div class="services-list">
+          <div>
+            <i class="fa-solid fa-code"></i>
+            <h2>Web Design</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, eaque.</p>
+            <a href="#">Learn more</a>
+          </div>
+          <div>
+            <i class="fa-regular fa-crop"></i>
+            <h2>Ui UX Design</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, eaque.</p>
+            <a href="#">Learn more</a>
+          </div>
+          <div>
+            <i class="fa-brands fa-app-store"></i>
+            <h2>App Design</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, eaque.</p>
+            <a href="#">Learn more</a>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+
+    <!-- ....................Portfolio......................... -->
+
+    <div class="portfolio-container">
+      <div id="portfolio">
+        <h1 class="subtitle">My Work</h1>
+        <div class="work-list">
+          <div class="work">
+            <img id="first"
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTHD-i-0D1n8U-NVEoy5XYeQceIHaPnuD4mHg&usqp=CAU"
+              alt="">
+            <div class="layer">
+              <h1>Social Media App</h1>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium corporis vitae autem
+                necessitatibus alias! Eum.
+              </p>
+              <a href="#"><i class="fa-light fa-link"></i></a>
+            </div>
+
+          </div>
+          <div class="work">
+            <img
+              src="https://appinventiv.com/wp-content/uploads/sites/1/2019/02/Mobile-Web-vs.-Mobile-App-%E2%80%93-From-The-Startup-Perspective.png"
+              alr="">
+            <div class="layer">
+              <h1>Social Media App</h1>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium corporis vitae autem
+                necessitatibus alias! Eum.
+              </p>
+              <a href="#"><i class="fa-light fa-link"></i></a>
+            </div>
+          </div>
+          <div class="work">
+            <img
+              src="https://appinventiv.com/wp-content/uploads/sites/1/2019/02/How-Important-is-UI-UX-Design-in-an-App-Development-Process.png"
+              alt="">
+            <div class="layer">
+              <h1>Social Media App</h1>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium corporis vitae autem
+                necessitatibus alias! Eum.
+              </p>
+              <a href="#"><i class="fa-light fa-link"></i></a>
+            </div>
+          </div>
+        </div>
+        <a href="#" class="btn">See More</a>
+
+
+      </div>
+    </div>
+
+    <!-- ....................contact......................... -->
+
+    <div class="contact-container">
+      <div id="contact">
+        <div class="first-column">
+          <h1 class="subtitle">Contact Me</h1>
+          <p><i class="fa-regular fa-envelope"></i>bontinue@gmail.com</p>
+          <p><i class="fa-solid fa-phone"></i>8349774340</p>
+          <div class="social-icons">
+            <a href=""><i class="fa-brands fa-instagram"></i></a>
+            <a href=""><i class="fa-brands fa-youtube"></i></a>
+            <a href=""><i class="fa-brands fa-twitter"></i></a>
+          </div>
+          <a href="/Images/workout.png" download class="btn btn2">Download Resume</a>
+        </div>
+        <div class="second-column">
+          <form name="submit-to-google-sheet">
+            <input type="text" name="name" placeholder="your name" required>
+            <input type="email" name="email" placeholder="your email" required>
+            <textarea name="Message" rows="6" placeholder="your message"></textarea>
+            <button type="submit" class="btn btn2">Submit</button>
+          </form>
+          <span id="msg">hello</span>
+        </div>
+      </div>
+
+
+    </div>
+    <div class="greeting">
+      <p>Thank You so much for checking my Portfolio</p>
+    </div>
+
+  </div>
+  <!-- <script src="script.js"></script> -->
+  <script>
+    const tablinks = document.getElementsByClassName('tab-links');
+    const tabcontents = document.getElementsByClassName('tab-contents');
+
+    function opentab(tabname) {
+      for (let tablink of tablinks) {
+        tablink.classList.remove("active-link")
+
+      }
+      for (let tabcontent of tabcontents) {
+        tabcontent.classList.remove("active-tab");
+
+
+      }
+      event.currentTarget.classList.add("active-link");
+      document.getElementById(tabname).classList.add("active-tab");
+
+    }
+  </script>
+
+  <script>
+    var sidemenu = document.getElementById("side-menu");
+    function openmenu() {
+      sidemenu.style.right = "0";
+    }
+    function closemenu() {
+      sidemenu.style.right = "-200px";
+    }
+  </script>
+
+  <script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbwSWWaECApk3NJOruxqPrxBpY0coMh5A9bT3lsUmq9PO4xvSFTc9SblpTaEawxYT8amvg/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById('msg');
+
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+        .then(response => {
+          msg.innerHTML = 'Message sent successfully'
+          setTimeout(function () {
+            msg.innerHTML = ""
+          }, 5000)
+          form.reset();
         })
-    </script>
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
 </body>
 
 </html>

@@ -1,41 +1,38 @@
-@import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Dancing+Script:wght@500&family=Montserrat:wght@200&family=PT+Sans:ital@0;1&family=Poppins:wght@200&family=Space+Mono:ital@1&family=Tajawal:wght@300&family=Tinos&family=Ubuntu:wght@300&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Dancing+Script:wght@500&family=Montserrat:wght@200&family=PT+Sans:ital@0;1&family=Poppins:wght@200&family=Space+Mono:ital@1&family=Tajawal:wght@300&family=Tinos&family=Ubuntu:wght@300&display=swap");
 
 * {
     margin: 0;
     padding: 0;
 }
-html{
+
+html {
     scroll-behavior: smooth;
 }
+
 body {
     background-color: white;
     box-sizing: border-box;
 }
 
 #inner-container {
-    /* background-color: #f6f6f6; */
-    background-color: #F0FFFF;
+
+    background-color: #f0ffff;
     width: 95vw;
     border: 1px #454545;
     margin: auto;
-    /* height: 90vh; */
     position: relative;
     top: 23px;
     border: 0.4px solid #999999;
     border-radius: 5px;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-    /* background-image: url(/Images/picture.jpg); */
     background-size: conver;
     background-position: center;
 }
 
-
 /* ..................... Navbar Section ........................... */
 
-
 .container-nav {
-    font-family: 'Montserrat', sans-serif;
-
+    font-family: "Montserrat", sans-serif;
 }
 
 nav {
@@ -47,7 +44,6 @@ nav {
     padding-right: 40px;
     background-color: white;
     border-bottom: 1px solid #d0d0d0;
-
 }
 
 .logo {
@@ -59,7 +55,6 @@ nav ul li {
     display: inline-block;
     list-style: none;
     margin: 10px 20px;
-
 }
 
 nav ul li a {
@@ -72,7 +67,7 @@ nav ul li a {
 }
 
 nav ul li a::after {
-    content: '';
+    content: "";
     width: 0;
     height: 3px;
     background-color: #1fafcc;
@@ -86,9 +81,7 @@ nav ul li a:hover::after {
     width: 100%;
 }
 
-
 /* ................ Header-body section....................*/
-
 
 .header-body {
     margin-left: 11%;
@@ -100,7 +93,6 @@ nav ul li a:hover::after {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-
 }
 
 .header-text {
@@ -114,7 +106,6 @@ nav ul li a:hover::after {
 .header-text h1 {
     margin-top: 15px;
     font-size: 50px;
-
 }
 
 .header-text h1 span {
@@ -133,16 +124,13 @@ nav ul li a:hover::after {
     border-radius: 15px;
 }
 
-
 .main-container {
     margin-left: 11%;
     margin-right: 5%;
-    font-family: 'Montserrat', sans-serif;
+    font-family: "Montserrat", sans-serif;
 }
 
-
 /* ...................About section.............................. */
-
 
 #about {
     padding: 60px 0;
@@ -153,17 +141,14 @@ nav ul li a:hover::after {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-
 }
 
 #about-img {
     height: 200px;
-
 }
 
 .about-column-1 {
     flex-basis: 35%;
-
 }
 
 .about-column-1 img {
@@ -173,20 +158,17 @@ nav ul li a:hover::after {
 
 .about-column-2 {
     flex-basis: 60%;
-
 }
 
 .subtitle {
     font-size: 50px;
     font-weight: bolder;
     color: black;
-
 }
 
 .tab-titles {
     display: flex;
     margin: 15px 0 30px;
-
 }
 
 .tab-links {
@@ -199,7 +181,7 @@ nav ul li a:hover::after {
 }
 
 .tab-links::after {
-    content: '';
+    content: "";
     width: 0;
     height: 3px;
     background-color: #1fafcc;
@@ -207,8 +189,6 @@ nav ul li a:hover::after {
     left: 0;
     bottom: -6px;
     transition: 0.3s;
-
-
 }
 
 .tab-links:hover::after {
@@ -222,7 +202,6 @@ nav ul li a:hover::after {
 .tab-contents ul li {
     list-style: none;
     margin: 10px 0;
-
 }
 
 .tab-contents ul li span {
@@ -239,19 +218,16 @@ nav ul li a:hover::after {
     display: block;
 }
 
-
 /* ...................Services Section.............................. */
-
 
 .services-container {
     margin-left: 11%;
     margin-right: 5%;
-    font-family: 'Montserrat', sans-serif;
+    font-family: "Montserrat", sans-serif;
 }
 
 #services {
     padding: 30px 0;
-
 }
 
 .services-list {
@@ -267,15 +243,12 @@ nav ul li a:hover::after {
     color: white;
     border-radius: 10px;
     transition: background 0.5s, transform 0.5s;
-
-
 }
 
 .services-list div:hover {
     background: #88e7ff;
     transform: translateY(-10px);
     color: black;
-
 }
 
 .services-list div i {
@@ -294,22 +267,18 @@ nav ul li a:hover::after {
     font-size: 12px;
     margin-top: 15px;
     display: inline-block;
-
 }
-
 
 /* ...................portfolio Section.............................. */
 
-
-.portfolio-contaner {
+.portfolio-container {
     margin-left: 11%;
     margin-right: 5%;
-    font-family: 'Montserrat', sans-serif;
+    font-family: "Montserrat", sans-serif;
 }
 
 #portfolio {
     padding: 40px 0;
-
 }
 
 .work-list {
@@ -317,7 +286,6 @@ nav ul li a:hover::after {
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     grid-gap: 30px;
     margin-top: 40px;
-
 }
 
 .work {
@@ -325,7 +293,6 @@ nav ul li a:hover::after {
     position: relative;
     overflow: hidden;
     color: white;
-
 }
 
 .work img {
@@ -336,7 +303,6 @@ nav ul li a:hover::after {
 
 #first {
     height: 316px;
-
 }
 
 .layer {
@@ -361,8 +327,8 @@ nav ul li a:hover::after {
     margin-bottom: 20px;
 }
 
-.layer a{
-    margin-top: 20Px;
+.layer a {
+    margin-top: 20px;
     color: #ff004f;
     font-size: 18px;
     line-height: 60px;
@@ -372,15 +338,15 @@ nav ul li a:hover::after {
     border-radius: 50%;
 }
 
-.work:hover img{
+.work:hover img {
     transform: scale(1.1);
 }
 
-.work:hover .layer{
+.work:hover .layer {
     height: 100%;
 }
 
-.btn{
+.btn {
     display: block;
     margin: 50px auto;
     width: fit-content;
@@ -393,86 +359,83 @@ nav ul li a:hover::after {
     transition: background 0.5s;
 }
 
-.btn:hover{
+.btn:hover {
     background: #ff004f;
-
 }
 
 /* ...................Contact Section.............................. */
 
-.contact-container{
+.contact-container {
     margin-left: 11%;
     margin-right: 5%;
-    font-family: 'Montserrat', sans-serif;
+    font-family: "Montserrat", sans-serif;
 }
 
-#contact{
+#contact {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     grid-gap: 30px;
     margin-top: 40px;
 }
 
-.first-column p{
+.first-column p {
     margin-top: 30px;
-
 }
 
-.first-column p i{
+.first-column p i {
     color: #ff004f;
     margin-right: 15px;
     font-size: 25px;
 }
 
-.social-icons{
+.social-icons {
     margin-top: 35px;
-    
 }
 
-.social-icons a{
+.social-icons a {
     text-decoration: none;
     font-size: 30px;
     margin-right: 12px;
     color: #ababab;
     display: inline-block;
     transition: transform 0.5s;
-
 }
 
-.social-icons a:hover{
+.social-icons a:hover {
     color: #ff004f;
     transform: translateY(-5px);
 }
-.btn.btn2{
+
+.btn.btn2 {
     display: inline-block;
     background: #ff004f;
 }
 
-.second-column form{
-  width: 100%;
-
+.second-column form {
+    width: 100%;
 }
 
-form input , form textarea{
+form input,
+form textarea {
     width: 100%;
     border: 0;
     outline: none;
     background: #262626;
     padding: 15px;
     color: #fff;
-    margin: 15px 0 ;
+    margin: 15px 0;
     font-size: 20px;
     border-radius: 6px;
 }
 
-form .btn2{
+form .btn2 {
     padding: 14px 40px;
     font-size: 18px;
     margin-top: 16px;
     cursor: pointer;
 }
 
-.greeting{
+.greeting {
     width: 100%;
     text-align: center;
     padding: 15px 0;
@@ -480,26 +443,91 @@ form .btn2{
     margin-top: 10px;
     font-weight: 900;
     color: white;
-    font-family: 'Montserrat', sans-serif;
+    font-family: "Montserrat", sans-serif;
 }
 
-
-
 /* ...................... Media Queryies of small screen ....................... */
-    #times , #menu{
+#times,
+#menu {
     display: none;
     /* font-size: 45px; */
     color: black;
-
 }
-@media only screen and (max-width: 600px){
-     #times , #menu {
+
+
+
+@media only screen and (max-width: 479px) {
+    #inner-container {
+        width: 95vw;
+        margin: auto;
+    }
+  
+   .tab-titles p {
+        font-size: 20px;
+        margin-right: 18px;
+    }
+}
+
+@media only screen and (max-width: 342px) {
+    
+  
+   .tab-titles p {
+        font-size: 20px;
+        margin-right: 13px;
+    }
+}
+@media only screen and (max-width: 320px) {
+    
+  
+   .tab-titles p {
+        font-size: 15px;
+        margin-right: 5px;
+    }
+}
+
+
+@media only screen and (max-width: 600px) {
+
+    #times,
+    #menu {
         display: block;
         font-size: 25px;
         color: black;
-       }
+    }
 
-       nav ul{
+    .services-container {
+        margin-left: 5%;
+    }
+
+    .portfolio-container {
+        margin-left: 5%;
+    }
+
+    .contact-container {
+        margin-left: 5%;
+        margin-right: 12%;
+
+    }
+
+    .header-body {
+        margin-left: 5%;
+    }
+
+    .main-container {
+        margin-left: 5%;
+
+    }
+
+    .header-text {
+        flex-basis: 35%;
+    }
+
+    .header-picture {
+        flex-basis: 38%;
+        margin-right: 23px;
+    }
+
+    nav ul {
         background: #ff004f;
         position: fixed;
         top: 0;
@@ -509,49 +537,58 @@ form .btn2{
         padding-top: 50px;
         z-index: 2;
         transition: right 0.5s;
-       
-    
-       }
-       nav ul li {
+    }
+
+    nav ul li {
         display: block;
         margin: 35px;
         color: white;
+    }
 
-       }
-       nav ul #times{
+    nav ul #times {
         position: absolute;
         top: 25px;
         left: 25px;
         cursor: pointer;
         color: white;
-       }
-       .subtitle{
+    }
+
+    .subtitle {
         font-size: 40px;
-       }
-       .about-column-1, .about-column-2{
+    }
+
+    .about-column-1,
+    .about-column-2 {
         flex-basis: 100%;
-       }
-       .about-column-1{
+    }
+
+    .about-column-1 {
         margin-bottom: 30px;
-       }
-       .about-column-2{
+    }
+
+    .about-column-2 {
         font-size: 15px;
-       }
-       .tab-links{
+    }
+
+    .tab-links {
         font-size: 30px;
         margin-right: 18px;
-       }
-       .first-column, .second-column{
+    }
+
+    .first-column,
+    .second-column {
         /* margin: 15px auto; */
         flex-basis: 100%;
         /* but it will not work becasue it's a grid container */
-       }
+    }
 }
 
-#msg{
+#msg {
     color: #51fa14;
     margin-top: -30px;
     display: block;
     font-size: 15px;
-    font-family: 'Montserrat', sans-serif;
+    font-family: "Montserrat", sans-serif;
 }
+
+;
