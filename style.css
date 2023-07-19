@@ -34,7 +34,11 @@ body {
 
 /* ..................... Navbar Section ........................... */
 
-
+#navbar{
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+}
 
 nav {
     list-style: none;
@@ -88,17 +92,20 @@ nav ul li a:hover::after {
 }
 
 /* ................ Header-body section....................*/
-
+.header-container{
+    
+}
 
 .header-body {
-    margin-left: 8%;
-    margin-right: 8%;
-    padding: 100px 0px 15px 0px;
-    color: black;
+    padding: 100px 0px 100px 0px;
+    color: rgb(255, 255, 255);
     font-family: "Montserrat", sans-serif;
+    background: #000000;
 }
 
 .header-row {
+    margin-left: 8%;
+    margin-right: 10%;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -106,9 +113,11 @@ nav ul li a:hover::after {
 
 .header-text {
     flex-basis: 48%;
+    margin-top: 35px;
 }
 .header-picture {
-    flex-basis: 42%;
+    flex-basis: 38%;
+    margin-top: 60px;
 }
 
 .header-text h1 {
@@ -119,7 +128,7 @@ nav ul li a:hover::after {
 }
 
 .header-text h1 span {
-    color: #000eff;
+    color: #FFD95A;
 }
 
 .header-text p {
@@ -144,8 +153,7 @@ nav ul li a:hover::after {
 
 
 .main-container {
-    margin-left: 8%;
-    margin-right: 8%;
+  
     font-family: "Montserrat", sans-serif;
 }
 
@@ -160,11 +168,13 @@ nav ul li a:hover::after {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    margin-left: 5%;
+    margin-right: 5%;
 }
 
 #about-img {
-    height: 320px;
-    width: 380px;
+    height: 300px;
+    width: 300px;
 }
 
 
@@ -180,6 +190,13 @@ nav ul li a:hover::after {
 .about-column-2 {
     flex-basis: 60%;
 }
+.about-column-2 p {
+    font-family: 'Ysabeau Office', sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+
 
 .subtitle {
     font-size: 50px;
@@ -187,7 +204,10 @@ nav ul li a:hover::after {
     color: black;
     font-family: 'Signika Negative', sans-serif;
 }
-
+.tab-titles p{
+    font-family: 'Ysabeau Office', sans-serif;
+    font-size: 24px;
+}
 .tab-titles {
     display: flex;
     margin: 15px 0 30px;
