@@ -92,7 +92,7 @@ nav ul li a:hover::after {
 }
 
 /* ................ Header-body section....................*/
-.header-container {}
+
 
 .header-body {
     padding: 100px 0px 100px 0px;
@@ -524,7 +524,43 @@ form .btn2 {
     cursor: pointer;
     margin-bottom: 46px;
 }
+.fotter{
+    background: #3847d7;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    margin: 0px 1%;
+    border-radius: 10px;
+}
 
+.fotter-row{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 5%;
+    margin-right: 5%;
+    font-family: cursive;
+}
+
+.col1{
+    flex-basis: 50%;
+    
+}
+.col2{
+    flex-basis: 25%;
+
+}
+.col3{
+    flex-basis: 25%;
+
+}
+.fotter-row h3{
+    font-family: 'Ysabeau Office', sans-serif;
+}
+.fotter-row p{
+    font-family: 'Signika Negative', sans-serif;
+}
+.fotter-divs{
+    list-style: none;
+    color: black;
+}
 .greeting {
     width: 100%;
     text-align: center;
