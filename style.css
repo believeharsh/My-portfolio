@@ -34,7 +34,7 @@ body {
 
 /* ..................... Navbar Section ........................... */
 
-#navbar{
+#navbar {
     position: fixed;
     width: 100%;
     z-index: 999;
@@ -92,9 +92,7 @@ nav ul li a:hover::after {
 }
 
 /* ................ Header-body section....................*/
-.header-container{
-    
-}
+.header-container {}
 
 .header-body {
     padding: 100px 0px 100px 0px;
@@ -115,6 +113,7 @@ nav ul li a:hover::after {
     flex-basis: 48%;
     margin-top: 35px;
 }
+
 .header-picture {
     flex-basis: 38%;
     margin-top: 60px;
@@ -136,7 +135,8 @@ nav ul li a:hover::after {
     font-size: 30px;
     font-family: 'Inter', sans-serif;
 }
-#about-line{
+
+#about-line {
     font-size: 15px;
     font-weight: 400;
     margin-top: 10px;
@@ -153,7 +153,7 @@ nav ul li a:hover::after {
 
 
 .main-container {
-  
+
     font-family: "Montserrat", sans-serif;
 }
 
@@ -190,6 +190,7 @@ nav ul li a:hover::after {
 .about-column-2 {
     flex-basis: 60%;
 }
+
 .about-column-2 p {
     font-family: 'Ysabeau Office', sans-serif;
     font-size: 15px;
@@ -204,10 +205,12 @@ nav ul li a:hover::after {
     color: black;
     font-family: 'Signika Negative', sans-serif;
 }
-.tab-titles p{
+
+.tab-titles p {
     font-family: 'Ysabeau Office', sans-serif;
     font-size: 24px;
 }
+
 .tab-titles {
     display: flex;
     margin: 15px 0 30px;
@@ -242,12 +245,16 @@ nav ul li a:hover::after {
 }
 
 .tab-contents ul li {
+    font-family: 'Ysabeau Office', sans-serif;
     list-style: none;
     margin: 10px 0;
+    font-size: 15px;
+    font-weight: 700;
 }
 
 .tab-contents ul li span {
-    color: rgb(198, 3, 130);
+    font-family: 'Signika Negative', sans-serif;
+    color: #1b00ff;
     font-size: 15px;
     font-weight: bold;
 }
@@ -280,17 +287,21 @@ nav ul li a:hover::after {
 }
 
 .services-list div {
-    background: #262626;
-    padding: 30px;
+    background: rgb(140 140 140);
+    padding: 63px 40px;
     color: white;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+        rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+        rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
     border-radius: 10px;
-    transition: background 0.5s, transform 0.5s;
+    transition: background 0.5s ease 0s, transform 0.5s ease 0s;
 }
 
 .services-list div:hover {
-    background: #88e7ff;
+    /* background: #19376D; */
     transform: translateY(-10px);
-    color: black;
+    /* color: black; */
+
 }
 
 .services-list div i {
@@ -299,16 +310,22 @@ nav ul li a:hover::after {
 }
 
 .services-list div h2 {
+    font-family: 'Ysabeau Office', sans-serif;
     font-size: 20px;
-    font-weight: bold;
+    font-weight: 1000;
+}
+
+.services-list div p {
+    font-family: 'Ysabeau Office', sans-serif;
 }
 
 .services-list div a {
-    color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
     text-decoration: none;
     font-size: 12px;
     margin-top: 15px;
     display: inline-block;
+    font-weight: 1000;
 }
 
 /* ...................portfolio Section.............................. */
@@ -348,7 +365,7 @@ nav ul li a:hover::after {
 }
 
 .layer {
-    background: linear-gradient(rgba(0, 0, 0, 0.5), #ff004f);
+    background: linear-gradient(rgba(0, 0, 0, 0.5), #191919);
     border-radius: 10px;
     position: absolute;
     left: 0;
@@ -388,21 +405,26 @@ nav ul li a:hover::after {
     height: 100%;
 }
 
-.btn {
+.see-more-btn {
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+        rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+        rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    font-family: 'Ysabeau Office', sans-serif;
+    ;
     display: block;
     margin: 50px auto;
     width: fit-content;
-    border: 1px solid rgb(226, 189, 44);
+    /* border: 1px solid rgb(226, 189, 44); */
     padding: 14px 40px;
     border-radius: 6px;
     text-decoration: none;
-    color: #410dfd;
+    color: #000000;
     font-weight: bold;
     transition: background 0.5s;
 }
 
-.btn:hover {
-    background: #ff004f;
+.see-more-btn:hover {
+    background: #646FD4;
 }
 
 /* ...................Contact Section.............................. */
@@ -422,10 +444,12 @@ nav ul li a:hover::after {
 
 .first-column p {
     margin-top: 30px;
+    font-family: 'Ysabeau Office', sans-serif;
+    font-weight: 600;
 }
 
 .first-column p i {
-    color: #ff004f;
+    color: #000000;
     margin-right: 15px;
     font-size: 25px;
 }
@@ -438,19 +462,30 @@ nav ul li a:hover::after {
     text-decoration: none;
     font-size: 30px;
     margin-right: 12px;
-    color: #ababab;
+    color: #000000;
     display: inline-block;
     transition: transform 0.5s;
 }
 
 .social-icons a:hover {
-    color: #ff004f;
+    color: #646FD4;
     transform: translateY(-5px);
 }
 
 .btn.btn2 {
-    display: inline-block;
-    background: #ff004f;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+        rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+        rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    font-family: 'Ysabeau Office', sans-serif;
+    ;
+    display: block;
+    width: fit-content;
+    background: #646FD4;
+    border-radius: 6px;
+    text-decoration: none;
+    color: #000000;
+    font-weight: 600;
+    border: none;
 }
 
 .second-column form {
@@ -462,19 +497,32 @@ form textarea {
     width: 100%;
     border: 0;
     outline: none;
-    background: #262626;
+    background: #646FD4;
     padding: 15px;
-    color: #fff;
+    color: #000000;
     margin: 15px 0;
     font-size: 20px;
-    border-radius: 6px;
+    border-radius: 10px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+        rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+        rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+
+::placeholder {
+    color: black;
+}
+
+.first-column a.btn {
+    padding: 10px 15px;
+    margin-top: 10px;
 }
 
 form .btn2 {
-    padding: 14px 40px;
+    padding: 10px 35px;
     font-size: 18px;
     margin-top: 16px;
     cursor: pointer;
+    margin-bottom: 46px;
 }
 
 .greeting {
@@ -482,35 +530,37 @@ form .btn2 {
     text-align: center;
     padding: 15px 0;
     background: #262626;
-    margin-top: 10px;
-    font-weight: 900;
+    margin-top: 20px;
+    font-weight: 500;
     color: white;
-    font-family: "Montserrat", sans-serif;
+    font-family: 'Ysabeau Office', sans-serif;
+    font-size: 15px;    
 }
+
 .floating-btn {
-	border-radius: 26.5px;
-	background-color: #001F61;
-	border: 1px solid #001F61;
-	box-shadow: 0 16px 22px -17px #03153B;
-	color: #fff;
-	cursor: pointer;
-	font-size: 16px;
-	line-height: 20px;
-	padding: 12px 20px;
-	position: fixed;
-	bottom: 20px;
-	right: 20px;
-	z-index: 999;
+    border-radius: 26.5px;
+    background-color: #001F61;
+    border: 1px solid #001F61;
+    box-shadow: 0 16px 22px -17px #03153B;
+    color: #fff;
+    cursor: pointer;
+    font-size: 16px;
+    line-height: 20px;
+    padding: 12px 20px;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 999;
 }
 
 .floating-btn:hover {
-	background-color: #ffffff;
-	color: #001F61;
+    background-color: #ffffff;
+    color: #001F61;
 }
 
 .floating-btn:focus {
-	outline: none;
-} 
+    outline: none;
+}
 
 
 /* ...................... Media Queryies of small screen ....................... */
@@ -528,25 +578,26 @@ form .btn2 {
         width: 95vw;
         margin: auto;
     }
-  
-   .tab-titles p {
+
+    .tab-titles p {
         font-size: 20px;
         margin-right: 18px;
     }
 }
 
 @media only screen and (max-width: 342px) {
-    
-  
-   .tab-titles p {
+
+
+    .tab-titles p {
         font-size: 20px;
         margin-right: 13px;
     }
 }
+
 @media only screen and (max-width: 320px) {
-    
-  
-   .tab-titles p {
+
+
+    .tab-titles p {
         font-size: 15px;
         margin-right: 5px;
     }
@@ -651,7 +702,8 @@ form .btn2 {
 }
 
 #msg {
-    color: #51fa14;
+    color: #ff0000;
+    font-family: 'Signika Negative', sans-serif;
     margin-top: -30px;
     display: block;
     font-size: 15px;
@@ -659,6 +711,7 @@ form .btn2 {
 }
 
 ;
+
 /* get in touch section */
 .floating-container {
     position: fixed;
@@ -674,19 +727,19 @@ form .btn2 {
 
 .social-media-panel {
     background-color: #3cdbff;
-border-radius: 18px 1px 1px 18px;
-box-shadow: 0 16px 31px -17px rgba(0, 31, 97, 0.6);
-border: 2px solid #000000;
-display: flex;
-flex-direction: column;
-justify-content: center;
-align-items: center;
-font-family: "Muli";
-position: relative;
-height: 235px;
-width: 52px;
-/* max-width: calc(100% - 10px); */
-right: -25%;
+    border-radius: 18px 1px 1px 18px;
+    box-shadow: 0 16px 31px -17px rgba(0, 31, 97, 0.6);
+    border: 2px solid #000000;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: "Muli";
+    position: relative;
+    height: 235px;
+    width: 52px;
+    /* max-width: calc(100% - 10px); */
+    right: -25%;
 }
 
 .social-media-panel button.close-btn {
@@ -751,17 +804,17 @@ right: -25%;
 
 .social-media-panel ul li a {
     border: 1px solid #dce1f2;
-border-radius: 50%;
-color: #000000;
-font-size: 15px;
-display: flex;
-justify-content: center;
-align-items: center;
-height: 35px;
-width: 35px;
-text-decoration: none;
-margin-right: 0px;
-margin-bottom: 4px;
+    border-radius: 50%;
+    color: #000000;
+    font-size: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 35px;
+    width: 35px;
+    text-decoration: none;
+    margin-right: 0px;
+    margin-bottom: 4px;
 }
 
 .social-media-panel ul li a:hover {
