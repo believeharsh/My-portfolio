@@ -8,6 +8,158 @@
     padding: 0;
 }
 
+/* side-bar container */
+.favicon {
+    border-radius: 50%;
+}
+
+/* .side-menu-container {
+    display: flex;
+} */
+
+.page-container {
+
+    background-color: rgb(16 17 31);
+    width: 18%;
+    color: black;
+    position: fixed;
+    height: 100vh;
+    z-index: 999;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    border-radius: 0px 43px 43px 0px;
+    top: 4.1%;
+    border-right: 1px solid white;
+
+    transition: transform 0.4s ease-in-out;
+}
+
+.page-container.visible {
+    transform: translateX(-100%);
+   
+}
+
+.side-row {
+    padding: 20px 3px;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.text-center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15%;
+
+}
+
+.text-center header {
+    position: relative;
+    top: 0px;
+    margin: 1px auto;
+    text-align: center;
+}
+
+.navigation-container {
+    margin-top: -29px;
+}
+
+
+.text-center header img {
+    height: 88px;
+    border-radius: 50%;
+    /* margin-left: 10px; */
+    margin: 10% 0%;
+}
+
+.text-center header h5 {
+    margin: 7px 3px;
+    font-size: 20px;
+
+    color: #00f9ff;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 1000;
+}
+
+section {
+    margin: 20% 1%;
+}
+
+.navigation-container li {
+
+    list-style: none;
+    margin: 6px 0px;
+
+}
+
+
+.navigation-container li a {
+    color: white;
+    list-style: none;
+    text-decoration: none;
+    font-size: 20px;
+    font-family: 'PT Sans Narrow', sans-serif;
+
+}
+
+#insta-follow {
+    height: 30px;
+    width: 100%;
+    padding: 0px 5px;
+    background-color: rgb(0 0 0);
+    border-radius: 7px;
+    border: 1px solid white;
+    font-family: "Ysabeau Office", sans-serif;
+}
+
+#insta-follow p {
+    font-size: 12px;
+    color: white;
+}
+
+#insta-follow p a {
+    color: white;
+    text-decoration: none;
+
+}
+
+.social-container {
+    display: flex;
+    margin: 5px 0px;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.social-container li {
+    list-style: none;
+
+    font-size: 12px;
+    margin: 5px;
+
+}
+
+.social-container li a {
+
+    text-decoration: none;
+    color: #00f9ff;
+    font-size: 14px;
+}
+
+.social-container li a:hover {
+    font-size: 13.5px;
+}
+
+#copyright {
+    font-size: 13px;
+    color: white;
+    margin: 1px 0px 10px 12px;
+    font-family: 'Ubuntu', sans-serif;
+
+}
+
+
 html {
     scroll-behavior: smooth;
 }
@@ -17,20 +169,8 @@ body {
     box-sizing: border-box;
 }
 
-/* #inner-container {
 
-    background-color: #f0ffff;
-    width: 95vw;
-    border: 1px #454545;
-    margin: auto;
-    position: relative;
-    top: 23px;
-    border: 0.4px solid #999999;
-    border-radius: 5px;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-    background-size: conver;
-    background-position: center;
-} */
+
 
 /* ..................... Navbar Section ........................... */
 
@@ -52,6 +192,21 @@ nav {
  
 }
 
+.left-side {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.left-side i {
+    position: relative;
+    left: 12px;
+    font-size: 22px;
+}
+.left-side i:hover{
+    font-size: 23px;
+}
 .logo {
     /* width: 120px; */
     font-size: 20px;
@@ -525,7 +680,8 @@ form .btn2 {
     cursor: pointer;
     margin-bottom: 46px;
 }
-.fotter{
+
+.fotter {
     background: #A1C2F1;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
     margin: 0px 1%;
@@ -534,54 +690,59 @@ form .btn2 {
     margin-bottom: 10px;
 }
 
-.fotter-row{
+.fotter-row {
     display: flex;
     flex-wrap: wrap;
     margin-left: 5%;
     margin-right: 0%;
-    
+
 }
 
-.fotter-divs{
+.fotter-divs {
     margin: 5px 10px;
 }
-.col1{
+
+.col1 {
     flex-basis: 55%;
-    
+
 }
-.col2{
+
+.col2 {
     flex-basis: 15%;
 
 }
-.col3{
+
+.col3 {
     flex-basis: 15%;
 
 }
-.fotter-divs h3{
+
+.fotter-divs h3 {
     font-family: 'Ysabeau Office', sans-serif;
     font-size: 23px;
     color: #40128B;
 }
 
-.fotter-divs p{
+.fotter-divs p {
     font-family: 'Signika Negative', sans-serif;
     font-size: 15px;
     font-weight: 500;
 }
 
-.fotter-divs a{
-   text-decoration: none;
+.fotter-divs a {
+    text-decoration: none;
     color: black;
     font-family: 'Signika Negative', sans-serif;
     font-size: 15px;
 }
 
 
-.fotter-links{
+.fotter-links {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
 }
+
 .greeting {
     width: 100%;
     text-align: center;
@@ -591,9 +752,9 @@ form .btn2 {
     font-weight: 500;
     color: white;
     font-family: 'Ysabeau Office', sans-serif;
-    font-size: 15px; 
+    font-size: 15px;
     border-top: 2px solid white;
-    border-radius: 10px;   
+    border-radius: 10px;
 }
  .floating-btn {
 	 border-radius: 26.5px;
