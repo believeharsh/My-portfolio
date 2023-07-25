@@ -7,6 +7,13 @@
     margin: 0;
     padding: 0;
 }
+.container{
+    max-width: 1600px;
+    display: flex;
+    flex-direction: column;
+    margin: 0px auto;
+}
+
 
 /* side-bar container */
 .favicon {
@@ -178,6 +185,7 @@ body {
     position: fixed;
     width: 100%;
     z-index: 999;
+    max-width: 1600px;
 }
 
 nav {
@@ -329,8 +337,8 @@ nav ul li a:hover::after {
 }
 
 #about-img {
-    height: 300px;
-    width: 300px;
+    height: 100%;
+    width: 100%;
 }
 
 
