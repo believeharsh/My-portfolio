@@ -15,14 +15,11 @@
 }
 
 
-/* side-bar container */
+
 .favicon {
     border-radius: 50%;
 }
 
-/* .side-menu-container {
-    display: flex;
-} */
 
 .page-container {
 
@@ -76,7 +73,7 @@
 .text-center header img {
     height: 88px;
     border-radius: 50%;
-    /* margin-left: 10px; */
+  
     margin: 10% 0%;
 }
 
@@ -216,7 +213,7 @@ nav {
     font-size: 23px;
 }
 .logo {
-    /* width: 120px; */
+   
     font-size: 20px;
     margin: 2px 30px;
     font-family: 'Ysabeau Office', sans-serif;
@@ -462,9 +459,9 @@ nav ul li a:hover::after {
 }
 
 .services-list div:hover {
-    /* background: #19376D; */
+  
     transform: translateY(-10px);
-    /* color: black; */
+ 
 
 }
 
@@ -578,7 +575,7 @@ nav ul li a:hover::after {
     display: block;
     margin: 50px auto;
     width: fit-content;
-    /* border: 1px solid rgb(226, 189, 44); */
+  
     padding: 14px 40px;
     border-radius: 6px;
     text-decoration: none;
@@ -821,7 +818,7 @@ form .btn2 {
 #times,
 #menu {
     display: none;
-    /* font-size: 45px; */
+   
     color: black;
 }
 
@@ -949,9 +946,9 @@ form .btn2 {
 
     .first-column,
     .second-column {
-        /* margin: 15px auto; */
+        
         flex-basis: 100%;
-        /* but it will not work becasue it's a grid container */
+      
     }
 }
 
