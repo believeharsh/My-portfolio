@@ -1,4 +1,5 @@
 // Side bar feature script 
+
 const side_menu_container = document.querySelector(".page-container");
 
 const Main_Menu_button = document.getElementById("Main-Menu-button");
@@ -9,6 +10,7 @@ Main_Menu_button.addEventListener("click", () => {
 
 
 // about me feature script
+
 
 const tablinks = document.getElementsByClassName("tab-links");
 const tabcontents = document.getElementsByClassName("tab-contents");
@@ -25,16 +27,9 @@ function opentab(tabname) {
 }
 
 
-
-// var sidemenu = document.getElementById("side-menu");
-// function openmenu() {
-//   sidemenu.style.right = "0";
-// }
-// function closemenu() {
-//   sidemenu.style.right = "-200px";
-// }
-
 // for viewing the messages on your google sheets 
+
+
 
 const scriptURL =
   "https://script.google.com/macros/s/AKfycbwSWWaECApk3NJOruxqPrxBpY0coMh5A9bT3lsUmq9PO4xvSFTc9SblpTaEawxYT8amvg/exec";
