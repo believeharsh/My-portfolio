@@ -321,7 +321,7 @@ nav ul li a:hover::after {
 /* ...................About section.............................. */
 
 #about {
-    padding: 60px 0;
+    padding: 80px 0;
     color: black;
 }
 
@@ -351,7 +351,9 @@ nav ul li a:hover::after {
 .about-column-2 {
     flex-basis: 60%;
 }
-
+.about-me-tag{
+    margin-bottom: 20px;
+}
 .about-column-2 p {
     font-family: 'Ysabeau Office', sans-serif;
     font-size: 15px;
@@ -365,6 +367,7 @@ nav ul li a:hover::after {
     font-weight: bolder;
     color: black;
     font-family: 'Signika Negative', sans-serif;
+    margin-bottom: 10px;
 }
 
 .tab-titles p {
@@ -749,6 +752,7 @@ form .btn2 {
 }
 
 .greeting {
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
     width: 100%;
     text-align: center;
     padding: 15px 0;
@@ -761,58 +765,7 @@ form .btn2 {
     border-top: 2px solid white;
     border-radius: 10px;
 }
- .floating-btn {
-	 border-radius: 26.5px;
-	background-color: #001F61;
-	border: 1px solid #001F61;
-	box-shadow: 0 16px 22px -17px #03153B;
-	color: #fff;
-	cursor: pointer;
-	font-size: 16px;
-	line-height: 20px;
-	padding: 12px 20px;
-	position: fixed;
-	bottom: 20px;
-	right: 20px;
-	z-index: 999;
-}
-
-.floating-btn:hover {
-	background-color: #ffffff;
-	color: #001F61;
-}
-
-.floating-btn:focus {
-	outline: none;
-} 
-
-
-
-.floating-btn {
-    border-radius: 26.5px;
-    background-color: #001F61;
-    border: 1px solid #001F61;
-    box-shadow: 0 16px 22px -17px #03153B;
-    color: #fff;
-    cursor: pointer;
-    font-size: 16px;
-    line-height: 20px;
-    padding: 12px 20px;
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    z-index: 999;
-}
-
-.floating-btn:hover {
-    background-color: #ffffff;
-    color: #001F61;
-}
-
-.floating-btn:focus {
-    outline: none;
-}
-
+ 
 
 /* ...................... Media Queryies of small screen ....................... */
 #times,
