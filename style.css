@@ -457,8 +457,8 @@ nav ul li a:hover::after {
 /* ...................Services Section.............................. */
 
 .services-container {
-    margin-left: 8%;
-    margin-right: 8%;
+    margin-left: 5%;
+    margin-right: 5%;
     font-family: "Montserrat", sans-serif;
 }
 
@@ -518,8 +518,8 @@ nav ul li a:hover::after {
 /* ...................portfolio Section.............................. */
 
 .portfolio-container {
-    margin-left: 8%;
-    margin-right: 8%;
+    margin-left: 5%;
+    margin-right: 5%;
     font-family: "Montserrat", sans-serif;
 }
 
@@ -617,8 +617,8 @@ nav ul li a:hover::after {
 /* ...................Contact Section.............................. */
 
 .contact-container {
-    margin-left: 8%;
-    margin-right: 8%;
+    margin-left: 5%;
+    margin-right: 5%;
     font-family: "Montserrat", sans-serif;
 }
 
@@ -676,7 +676,7 @@ nav ul li a:hover::after {
 }
 
 .second-column form {
-    width: 100%;
+    width: 92%;
 }
 
 form input,
@@ -853,19 +853,8 @@ form .btn2 {
         color: black;
     }
 
-    .services-container {
-        margin-left: 5%;
-    }
-
-    .portfolio-container {
-        margin-left: 5%;
-    }
-
-    .contact-container {
-        margin-left: 5%;
-        margin-right: 12%;
-
-    }
+    
+   
 
     .header-body {
         margin-left: 1%;
@@ -971,6 +960,40 @@ form .btn2 {
     .tab-titles p {
         font-size: 23px;
     }
+    .tab-contents ul li span {
+        font-size: 20px;
+       
+    }
+    .tab-contents ul li {
+        font-size: 18px;
+      
+    }
+
+
+    .services-container {
+        
+    margin-left: 4%;
+    margin-right: 4%;
+
+    }
+
+    .portfolio-container {
+          
+    margin-left: 4%;
+    margin-right: 4%;
+    }
+    #portfolio {
+        padding: 20px 0;
+    }
+
+    .contact-container {
+        margin-left: 4%;
+        margin-right: 4%;
+    }
+    #contact {
+       margin-top: 10px;
+    }
+
 }
 @media only screen and (max-width: 665px){
 
